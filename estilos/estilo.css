@@ -1,0 +1,163 @@
+/* FEITO POR ALAN E JOÃO */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
+  background-color: lightseagreen;
+  padding: 2rem 2rem;
+  max-width: 90%;
+}
+
+img {
+  max-width: 91%;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 10px auto;
+}
+
+#Projeto {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+#Projeto-Link {
+  text-shadow: 1px 1px 2px black;
+}
+
+p, ul {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+#ClickCaixa {
+  margin-top: 10px auto;
+  font-size: 2.5rem;
+}
+
+ul {
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+h1 {
+  padding: 0 40px;
+  text-align: center;
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 1rem;
+      max-width: 100%;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  p, ul {
+      font-size: 2rem;
+  }
+
+  .user-button {
+      position: relative;
+      margin-top: 1rem;
+      display: block;
+      left: auto;
+      top: auto;
+      width: 100%;
+  }
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#alterar-usuario {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.esquerda-superior, .direita-superior {
+  position: absolute;
+}
+
+.esquerda-superior {
+  left: 0;
+  top: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.direita-superior {
+  right: 0;
+  top: 0;
+}
+
+.icone.pequeno {
+  width: 60px;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa-interativa {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.menu-navegacao {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+#projeto-info {
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .menu-navegacao {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-navegacao img {
+      margin: 1rem 0;
+  }
+}
+
+.overlay-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.5s ease;
+  z-index: 9999;
+}
+
+.overlay-img.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay-img.shrink {
+  transform: translate(-50%, -50%) scale(0);
+}
